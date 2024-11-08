@@ -1,45 +1,93 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
-header, footer {
+header {
+    background: linear-gradient(135deg, #007acc, #005f99);
+    color: #fff;
+    padding: 2em 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
     padding: 1em;
-    background-color: #222;
-    color: white;
+    text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Main Content */
 main {
-    padding: 2em;
     max-width: 800px;
-    margin: auto;
-    background: white;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-section {
+.section {
     margin-bottom: 2em;
 }
 
-h1, h2 {
-    color: #007acc;
+h2 {
+    color: #005f99;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
 }
 
-h3 {
-    color: #444;
+.project {
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    background-color: #fafafa;
 }
 
-ul {
-    list-style-type: square;
-    margin-left: 1.5em;
+.project:hover {
+    background-color: #e6f7ff;
+    transition: background-color 0.3s;
 }
 
+/* Contact Links */
 a {
     color: #007acc;
     text-decoration: none;
@@ -49,23 +97,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Project Section Styling */
-.project {
-    margin-bottom: 1.5em;
-    padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-    font-size: 0.9em;
-    padding: 1.5em;
+    text-align: center;
+    padding: 1em;
     background-color: #333;
     color: #eee;
+    font-size: 0.9em;
+    margin-top: 2em;
 }
