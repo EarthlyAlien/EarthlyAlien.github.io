@@ -9,61 +9,128 @@
 <body>
 
 <header>
-    <h1>Chaitanya Vankadaru</h1>
-    <p>Data & AI Solutions Architect | Data Scientist | MLOps Engineer</p>
+    <div class="container">
+        <h1>Chaitanya Vankadaru</h1>
+        <p>Data & AI Solutions Architect | Data Scientist | MLOps Engineer</p>
+    </div>
 </header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <main>
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I'm a Data & AI Solutions Architect with a background in Data Science, Data Engineering, MLOps, and Business Analytics. I enjoy transforming data into actionable insights and deploying scalable solutions.</p>
+        <p>I'm a Data & AI Solutions Architect with a background in Data Science, Data Engineering, MLOps, and Business Analytics. I specialize in transforming data into actionable insights and deploying scalable, cloud-based solutions that drive growth and innovation.</p>
+        <p>With a Master's in Advanced Data Analytics and certifications across major cloud platforms (AWS, Azure, GCP), I bring hands-on experience in data architecture, real-time data processing, and machine learning model deployment.</p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h2>Skills</h2>
         <ul>
-            <li><strong>Languages:</strong> Python, SQL, R, Rust, C++, Go</li>
-            <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Scikit-Learn, Apache Spark</li>
-            <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
-            <li><strong>Tools:</strong> Docker, Kubernetes, Terraform, Jenkins, GitHub Actions</li>
-            <li><strong>Data Visualization:</strong> Power BI, Tableau, Plotly</li>
+            <li><strong>Programming Languages:</strong> Python, SQL, R, Rust, C++, Go</li>
+            <li><strong>Frameworks & Libraries:</strong> TensorFlow, PyTorch, Scikit-Learn, Apache Spark, Apache Airflow</li>
+            <li><strong>Cloud Platforms:</strong> AWS (SageMaker, Lambda, Redshift), Azure (ML Studio, Synapse), GCP (BigQuery, AI Platform)</li>
+            <li><strong>Data Tools:</strong> dbt, Snowflake, Databricks, Fivetran, Kafka, Hadoop</li>
+            <li><strong>Data Visualization:</strong> Power BI, Tableau, Plotly, Matplotlib</li>
+            <li><strong>DevOps & MLOps Tools:</strong> Docker, Kubernetes, Terraform, Jenkins, MLflow, Kubeflow, GitHub Actions</li>
         </ul>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        
+        <div class="job">
+            <h3>Graduate Teaching Assistant</h3>
+            <p><strong>University of North Texas</strong> - Denton, Texas (June 2023 – Present)</p>
+            <ul>
+                <li>Enhanced curriculum with hands-on data science and cloud tools, leading to a 40% improvement in student satisfaction.</li>
+                <li>Guided students in data visualization and machine learning concepts, achieving a 12% increase in project quality.</li>
+                <li>Developed automated grading scripts in Python, reducing grading time by 40%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Product Lead (Data Engineer, Data Scientist, MLOps Engineer)</h3>
+            <p><strong>Cumulus Nexus India Private Limited</strong> - Visakhapatnam, India (Oct 2019 – Dec 2022)</p>
+            <ul>
+                <li><strong>Data Engineering:</strong> Designed ETL pipelines, reducing data processing time by 30% and supporting a 50% data volume increase. Optimized cloud infrastructure for a 25% cost reduction.</li>
+                <li><strong>Data Science:</strong> Built customer segmentation models, increasing retention by 12%, and conducted data analysis that boosted sales by 14%.</li>
+                <li><strong>MLOps Engineering:</strong> Developed CI/CD pipelines, reducing deployment time by 38% and automated model retraining workflows, reducing manual intervention by 24%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Community Lead</h3>
+            <p><strong>Azure Developer Community India</strong> - Visakhapatnam, India (May 2020 – Dec 2022)</p>
+            <ul>
+                <li>Organized workshops on MLOps and data analytics tools, increasing community engagement by 70%.</li>
+                <li>Conducted training on Power BI, Azure Synapse, and data visualization, improving member skills by 32%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Software Engineer - Data</h3>
+            <p><strong>Dhunis Technologies Private Limited</strong> - Visakhapatnam, India (Sept 2018 – July 2019)</p>
+            <ul>
+                <li>Developed backend services for data processing, enhancing system efficiency by 20%.</li>
+                <li>Analyzed customer data to identify trends, improving satisfaction by 11% through targeted insights.</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>Projects</h2>
 
         <div class="project">
+            <h3>Humana-Mays Case Competition</h3>
+            <p><strong>Tools:</strong> R, SQL, Tableau, ETL</p>
+            <p>Advanced to Round 2 among 400 teams by designing KPIs for patient engagement and identifying targeted health improvement strategies.</p>
+        </div>
+
+        <div class="project">
             <h3>Real-Time Data Streaming Solution</h3>
-            <p>Built a real-time data streaming architecture using Kafka and Spark, achieving 99.9% availability and enabling instant data processing and insights.</p>
+            <p><strong>Tools:</strong> Kafka, AWS Lambda, Spark</p>
+            <p>Developed a real-time streaming architecture, achieving 99.9% availability and enabling instant data processing for critical insights.</p>
         </div>
 
         <div class="project">
             <h3>Customer Churn Prediction</h3>
-            <p>Developed a machine learning model to predict customer churn with 86.2% accuracy, improving customer retention and lifetime value.</p>
+            <p><strong>Tools:</strong> Python, Scikit-Learn, AWS</p>
+            <p>Built a machine learning model to predict customer churn with 86.2% accuracy, supporting proactive retention strategies.</p>
         </div>
 
         <div class="project">
             <h3>Automated ML Pipeline</h3>
-            <p>Created a fully automated ML pipeline using Apache Airflow and AWS SageMaker, reducing operational costs by 14% and increasing model deployment efficiency.</p>
+            <p><strong>Tools:</strong> Python, Apache Airflow, AWS SageMaker</p>
+            <p>Engineered an end-to-end ML pipeline automating preprocessing, model training, and deployment, reducing costs by 14%.</p>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications">
+    <section id="certifications" class="section">
         <h2>Certifications</h2>
         <ul>
-            <li>AWS Cloud Data Engineer, Azure Data Engineer, Google Cloud Professional Data Engineer</li>
-            <li>Certified Kubernetes Administrator, Terraform Associate</li>
-            <li>IBM Data Science Professional Certificate, TensorFlow Developer</li>
+            <li><strong>Data Engineering & Cloud:</strong> AWS Cloud Data Engineer, Azure Data Engineer, Google Cloud Professional Data Engineer, SnowPro Core, Meta Database Engineer</li>
+            <li><strong>Machine Learning & Data Science:</strong> TensorFlow Developer, AWS Certified Machine Learning Specialty, IBM Data Science Professional</li>
+            <li><strong>MLOps & DevOps:</strong> Certified Kubernetes Administrator, Terraform Associate, Databricks Certified for Apache Spark</li>
         </ul>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:chaitanya.vankadaru@gmail.com">chaitanya.vankadaru@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/chaitanyavankadaru">linkedin.com/in/chaitanyavankadaru</a></p>
