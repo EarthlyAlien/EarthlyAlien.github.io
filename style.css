@@ -1,37 +1,40 @@
-/* Reset */
+/* Reset and Base Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
+    background-color: #f9f9f9;
     line-height: 1.6;
 }
 
+/* Header Styling */
 header {
     background: linear-gradient(135deg, #007acc, #005f99);
-    color: #fff;
-    padding: 2em 0;
+    color: white;
+    padding: 3em 0;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 0.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 header p {
     font-size: 1.2em;
 }
 
-/* Navigation */
+/* Navigation Styling */
 nav {
-    background-color: #333;
+    background-color: #005f99;
     padding: 1em;
     text-align: center;
 }
@@ -44,53 +47,64 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #ffd700;
 }
 
-/* Main Content */
+/* Main Content Styling */
 main {
     max-width: 800px;
     margin: 2em auto;
-    padding: 1em;
+    padding: 1.5em;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section and Typography */
 .section {
     margin-bottom: 2em;
 }
 
 h2 {
     color: #005f99;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #005f99;
     padding-bottom: 0.3em;
     margin-bottom: 1em;
 }
 
-.project {
+.project, .job {
     padding: 1em;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 1.5em;
     background-color: #fafafa;
+    margin-bottom: 1.5em;
+    transition: transform 0.2s;
 }
 
-.project:hover {
+.project:hover, .job:hover {
     background-color: #e6f7ff;
-    transition: background-color 0.3s;
+    transform: translateY(-5px);
 }
 
-/* Contact Links */
+/* Lists and Links */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-top: 1em;
+    color: #333;
+}
+
 a {
     color: #007acc;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
